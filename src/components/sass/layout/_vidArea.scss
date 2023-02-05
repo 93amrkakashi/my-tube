@@ -1,0 +1,39 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  // gap: 15px;
+  .vid-card {
+    margin: 10px 0;
+    border-radius: 8px;
+    // border: 1px solid red;
+    overflow: hidden;
+    .thumb {
+      img {
+        border-radius: 8px;
+
+        width: 280px;
+        height: 150px;
+      }
+    }
+    .details {
+      padding: 0 8px;
+      display: flex;
+      flex-direction: column;
+      .vid-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .ch-name {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .ch{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}

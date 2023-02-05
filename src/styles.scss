@@ -1,0 +1,32 @@
+@use "./components/sass/layout/navbar";
+@use "./components/sass/layout/sidebar";
+@use "./components/sass/layout/vidArea";
+@use "./components/sass/pages/channel";
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  padding: 0;
+  // background-color: #18191a;
+  // color: #e4e6eb;
+  overflow-x: hidden;
+
+}
+.icon {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #dff6ff;
+}

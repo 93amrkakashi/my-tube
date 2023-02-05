@@ -1,0 +1,25 @@
+@import "../vars";
+
+.sidebar {
+  position: sticky;
+  top: 50px;
+  background-color: #18191a;
+  color: #e4e6eb;
+  width: 150px;
+  height: calc(100vh - 50px);
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    .link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: flex-start;
+    }
+  }
+}
