@@ -1,0 +1,29 @@
+@import "../vars";
+.page {
+  display: flex;
+  .vid-area {
+    width: 70%;
+    position: sticky;
+    top: 5px;
+    left: 5px;
+    p{
+      color: $color;
+    padding: 8px;
+
+    }
+    .vid-title{
+      font-size: 22px;
+    width: 100%;
+    font-weight: 700;
+    }
+    .player{
+      
+    }
+  }
+  .videos {
+    overflow: auto;
+    max-height: 90vh;
+    width: 30%;
+
+  }
+}

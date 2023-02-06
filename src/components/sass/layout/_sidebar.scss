@@ -3,14 +3,15 @@
 .sidebar {
   position: sticky;
   top: 50px;
-  background-color: #18191a;
+  background-color: $bg-color;
   color: #e4e6eb;
-  width: 150px;
+  min-width: 155px;
   height: calc(100vh - 50px);
+  flex: 1;
   .links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-around;
     align-items: center;
     padding: 15px;
     gap: 15px;
@@ -20,6 +21,48 @@
       align-items: center;
       gap: 5px;
       justify-content: flex-start;
+
+      button {
+        border: none;
+        background-color: #ff000000;
+        color: white;
+        outline: none;
+      padding: 2px 5px;
+      min-width: 110px ;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &:focus {
+          background-color: red;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .area {
+    flex-direction: column;
+  }
+  .sidebar {
+    height: 15px;
+    min-width: 100%;
+    .links {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      padding: 5px;
+      gap: 5px;
+      overflow-x: scroll;
+      .link {
+        min-width: fit-content;
+        border: 1px solid grey;
+        border-radius: 8px;
+        padding: 2px 5px;
+      }
     }
   }
 }

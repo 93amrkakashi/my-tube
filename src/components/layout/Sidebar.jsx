@@ -9,7 +9,7 @@ function Sidebar({selectCategory, setselectCategory}) {
         {categories.map((category) => (
           <div className="link">
             {/* <Link to={`${category.value}`}> */}
-            <p onClick={() => setselectCategory(category.name)}>{category.name}</p>
+            <button onClick={() => setselectCategory(category.name)}>{category.name}</button>
             {/* </Link> */}
           </div>
         ))}

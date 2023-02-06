@@ -11,27 +11,44 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 15px;
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 5px;
   }
-  .search{
-    form{
-      input{
+  .search {
+    form {
+      input {
         padding: 3px 8px;
         outline: none;
         border: none;
         height: 30px;
-        border-radius: 8px 0  0 8px;
+        border-radius: 8px 0 0 8px;
       }
-      button{
+      button {
         height: 30px;
-        border-radius: 0 8px 8px  0;
+        border-radius: 0 8px 8px 0;
         border: none;
         outline: none;
         width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .navbar {
+    .search {
+      form {
+        input {
+          padding: 3px 8px;
+          outline: none;
+          border: none;
+          height: 30px;
+          border-radius: 8px 0 0 8px;
+          width: 100px;
+        }
       }
     }
   }

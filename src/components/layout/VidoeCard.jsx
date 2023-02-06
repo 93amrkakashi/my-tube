@@ -14,8 +14,8 @@ function VidoeCard({ video }) {
           </Link>
       </div>
       <div className="details">
-        {video.snippet.title.length > 25 ? (
-          <p className="vid-title">{video.snippet.title.slice(0, 25)}...</p>
+        {video.snippet.title.length > 40 ? (
+          <p className="vid-title">{video.snippet.title.slice(0, 40)}...</p>
         ) : (
           <p className="vid-title">{video.snippet.title}</p>
         )}
