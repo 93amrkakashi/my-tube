@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { options } from "../assets/fetch";
 import Navbar from "../layout/Navbar";
 import VidoeCard from "../layout/VidoeCard";
 
 function Channel() {
   const { id } = useParams();
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "e1a35da017mshe54f24e83be68a9p1543e2jsn711a0b317ba4",
-      "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
-    },
-  };
+  
   const [chvids, setchvids] = useState([]);
   const [chD, setchD] = useState({});
 
@@ -51,7 +46,7 @@ function Channel() {
         <img className="image" src={chD?.snippet?.thumbnails?.default?.url} alt="" />
         <p className="des"> {chD?.brandingSettings?.channel.description.slice(0,130)}....</p>
       </div>
-      <div className="videos">
+      <div style={{width:"100%"}} className="videos">
         {chvids.map((video) => (
           <VidoeCard key={video?.id.videoId} video={video} />
         ))}
